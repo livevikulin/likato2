@@ -67,12 +67,12 @@ $(document).ready(function() {
 			var scrolled = $(window).scrollTop();
 			$('#leaf').css('top',(250+(scrolled*.35))+'px');
 			$('#leaf2').css('top',(525-(scrolled*.45))+'px');
-			$('#leaf3').css('top',(700-(scrolled*.25))+'px');
+			$('#leaf3').css('top',(335-(scrolled*.25))+'px');
 			$('#leaf4').css('top',(550+(scrolled*.35))+'px');
 			$('#leaf5').css('top',(800-(scrolled*.55))+'px');
 			$('#leaf6').css('top',(0+(scrolled*.65))+'px');
 			$('#leaf7').css('top',(900-(scrolled*.25))+'px');
-			$('#leaf8').css('top',(300-(scrolled*.35))+'px');
+			$('#leaf8').css('top',(500-(scrolled*.35))+'px');
 	};
 
 });	
