@@ -1,0 +1,284 @@
+.info 
+  padding-top: 78px
+  padding-bottom: 60px
+  &-block 
+    position: relative
+    &__box 
+      width: 100%
+      max-width: 980px
+      margin: 0 auto
+      background: linear-gradient(90deg, #76B852 0%, #A0DA7F 100%)
+      border-radius: 12px
+      margin-top: 310px
+      padding: 40px 225px
+      position: relative
+  &-box
+    display: block
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 27px
+    line-height: 39px
+    text-align: center
+    color: #FFFFFF
+  &-likato 
+    display: block
+    bottom: 250px
+    left: 60px
+    position: absolute
+    font-family: Montserrat Bold
+    font-style: normal
+    font-weight: 800
+    font-size: 280px
+    line-height: 215px
+    text-align: center
+    color: rgba(43, 42, 41, 0.03)
+    z-index: -2
+  &-cosmetic 
+    position: absolute
+    bottom: 80px
+    left: 175px
+    z-index: -1
+  &-oil 
+    position: absolute
+    bottom: -35px
+    left: 114px
+  &-slider
+    &__bg 
+      position: absolute
+      content: ''
+      width: 100%
+      height: 100%
+      left: 5px
+      background: linear-gradient(0deg, #2D9CDB, #2D9CDB)
+      border-radius: 25px
+      transform: rotate(0.63deg)
+.slider 
+  display: flex
+  position: relative
+  margin: 0 auto
+  z-index: 10
+  &-block 
+    position: relative
+    width: 737px
+    height: 444px
+
+.viewport 
+  height: 100%
+  display: block
+  position: relative
+  overflow: hidden
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+  border-radius: 25px
+
+.sliderwprapper 
+	position: relative
+	left: 0
+	top: 0
+	height: calc(100%*4)
+	-webkit-transition: 0.3s
+	-o-transition: 0.3s
+	transition: 0.3s
+	-webkit-transition-timing-function: ease-in-out
+	-o-transition-timing-function: ease-in-out
+	transition-timing-function: ease-in-out
+  padding: 0
+  margin: 0
+  list-style: none
+
+.slide 
+  display: block
+  height: 444px
+  img 
+    width: 100%
+    border-radius: 25px
+
+.btns 
+  display: flex
+  flex-direction: column
+  margin-left: 45px
+  position: relative
+  &-nav 
+    display: flex
+    width: 100%
+    max-width: 423px
+    height: 92px
+    margin-bottom: 21px
+    cursor: pointer
+    &__number 
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 54px
+      height: 54px
+      flex-shrink: 0
+      border-radius: 50%
+      border: 1px solid rgba(0, 113, 181, 0.8)
+      margin-right: 20px
+    &__num
+      display: block
+      width: 40px
+      height: 40px
+      background: #2D9CDB
+      border-radius: 50%
+      box-shadow: 0px 0px 20px rgba(45, 156, 219, 0.5)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 22px
+      line-height: 40px
+      color: #FFFFFF
+      text-align: center
+    &__title 
+      display: block
+      font-family: Montserrat Bold
+      font-style: normal
+      font-weight: 800
+      font-size: 20px
+      line-height: 29px
+      color: #2B2A29
+      margin-bottom: 10px
+    &__description 
+      display: block
+      width: 100%
+      max-width: 353px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 23px
+      color: #828282
+.active
+  .btns-nav__number 
+    width: 68px
+    height: 68px
+  .btns-nav__num
+    width: 50px
+    height: 50px
+    font-size: 28px
+    line-height: 50px
+  .btns-nav__title
+    color: rgba(0, 113, 181, 0.8)
+
+@media (max-width: 1360px)
+  .btns
+    &-nav
+      &__description 
+        font-size: 14px
+
+@media (max-width: 1200px)
+  .slider 
+    &-block 
+      width: 670px
+      height: 330px
+  .slide 
+    height: 330px
+
+@media (max-width: 1000px)
+  .info
+    &-likato 
+      font-size: 210px
+    &-oil 
+      left: 35px
+    &-cosmetic 
+      left: 60px
+    &-block 
+      &__box 
+        padding: 40px 115px
+        margin-top: 250px
+  .slider 
+    &-block 
+      height: 253px
+  .btns 
+    margin-left: 30px
+    &-nav 
+      margin-bottom: 0
+      &__number 
+        width: 40px
+        height: 40px
+        margin-right: 10px
+      &__num 
+        width: 26px
+        height: 26px
+        font-size: 16px
+        line-height: 27px
+      &__title 
+        font-size: 18px
+        margin-bottom: 0
+      &__description 
+        font-size: 11px
+        line-height: normal
+  .active
+    .btns-nav__number 
+      width: 50px
+      height: 50px
+    .btns-nav__num
+      width: 32px
+      height: 32px
+      font-size: 24px
+      line-height: 34px
+  .slide 
+    height: 253px
+
+@media (max-width: 768px)
+  .info 
+    &-likato 
+      display: none 
+    &-cosmetic 
+      display: none
+    &-oil 
+      width: 50px
+      img 
+        width: 100%
+    &-block 
+      &__box 
+        margin-top: 50px
+    &-box 
+      font-size: 17px
+      line-height: 30px
+  .slider 
+    flex-direction: column-reverse
+    &-block 
+      width: 100%
+      height: 310px
+  .slide 
+    height: 310px
+
+@media (max-width: 580px)
+  .info 
+    padding-top: 27px
+    &-block 
+      &__box 
+        padding: 21px 35px
+    &-box 
+      font-size: 20px
+      line-height: 146%
+    &-oil 
+      width: 30px
+      bottom: -5px 
+      left: 10px 
+    &-slider 
+      &__bg 
+        width: 99%
+  .btns 
+    margin-left: 0 
+    &-nav 
+      margin-bottom: 17px
+      &__title 
+        font-size: 17px
+        line-height: 146%
+      &__description
+        font-size: 15px
+        line-height: 140%
+  .slider 
+    &-block 
+      height: 183px
+  .slide 
+    height: 183px
+
+
+

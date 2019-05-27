@@ -1,0 +1,106 @@
+.faq 
+  padding-top: 61px
+  padding-bottom: 114px
+  background: url('../img/faq/bg-faq.jpg') no-repeat
+  background-position-y: -5px
+  &-block 
+    display: flex
+  &-blocks 
+    margin-bottom: 10px
+  &-boxes 
+    width: 100%
+    max-width: 950px
+  &-title 
+    display: block
+    width: 100%
+    max-width: 286px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 32px
+    line-height: 47px
+    color: #2B2A29
+  &-box 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    border-left: 4px solid #C74B43
+    padding: 29px 19px 28px 40px
+    background: #FFFFFF
+    cursor: pointer
+    position: relative
+    &__question 
+      display: block
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 22px
+      line-height: 32px
+      color: #2B2A29
+    &__btn 
+      display: block
+      width: 25px
+      height: 1px
+      background-color: #000000
+      transition: 0.7s ease-in-out
+      position: relative
+      &:before 
+        position: absolute
+        content: ''
+        width: 25px
+        height: 1px
+        background-color: #000000
+        transform: rotate(90deg)
+    &__answer 
+      display: none
+      margin-top: -5px
+      padding: 29px 61px 20px 43px
+      background: #FFFFFF
+  &-answer 
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 27px
+    color: #2B2A29
+
+.faq-active
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1)
+.answer-active 
+  display: block
+.btn-active 
+  transform: rotate(-315deg)
+
+@media (max-width: 1000px)
+  .faq
+    &-title 
+      font-size: 30px
+    &-box 
+      padding: 20px 19px 19px 40px
+    &-answer 
+      font-size: 13px
+
+@media (max-width: 768px)
+  .faq 
+    &-title 
+      font-size: 22px
+    &-block 
+      display: flex
+      flex-direction: column
+
+@media (max-width: 580px)
+  .faq 
+    padding-top: 35px
+    padding-bottom: 60px
+    &-title 
+      max-width: 100%
+    &-box 
+      padding: 19px 19px 19px 13px
+      &__question 
+        font-size: 17px
+        line-height: 146%
+      &__answer 
+        font-size: 15px
+        line-height: 170%
+        padding: 29px 18px 29px 13px

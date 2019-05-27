@@ -1,0 +1,46 @@
+.footer 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 48px 80px
+  background: #4F4F4F
+  &-text 
+    display: block
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 29px
+    color: #E0E0E0
+  &-social 
+    display: flex
+    align-items: center
+    a 
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 41px
+      height: 41px
+      border-radius: 50%
+      margin-right: 21px
+      background: #4F4F4F
+      transition: 0.3s
+      &:hover 
+        border: 2px solid #DDEFBB
+      &:last-child 
+        margin-right: 0
+
+@media (max-width: 1000px)
+  .footer 
+    padding: 48px 40px
+
+@media (max-width: 580px)
+  .footer 
+    padding: 23px 13px 76px 13px
+    flex-direction: column
+    &-text 
+      font-size: 14px
+    &-social 
+      margin-top: 15px
+      a 
+        margin-right: 5px

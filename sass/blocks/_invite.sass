@@ -1,0 +1,152 @@
+.invite 
+  padding-top: 49px
+  padding-bottom: 110px
+  background: linear-gradient(90deg, #FFEEEE 0%, #DDEFBB 100%)
+  position: relative
+  &-girl 
+    position: absolute
+    bottom: -4px
+    left: 315px
+  &-block 
+    display: flex
+  &-title 
+    display: block
+    width: 100%
+    max-width: 634px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 32px
+    line-height: 47px
+    color: #2B2A29
+    margin-right: 74px
+  &-form 
+    margin-top: 49px
+    &__item
+      position: relative
+      input 
+        width: 100%
+        max-width: 519px
+        height: 35px
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 29px
+        color: #2B2A29
+        background: none
+        border: none
+        border-bottom: 1px solid #BDBDBD
+        padding-bottom: 5px
+        margin-bottom: 42px
+        outline: none
+        &::placeholder 
+          font-family: Montserrat
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 29px
+          color: #2B2A29
+      label 
+        position: absolute
+        top: 0
+        left: 0
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 29px
+        color: #2B2A29
+      input:focus ~ label
+        top: -20px
+        font-size: 13px
+        color: #AAAAAA
+    &__btn 
+      display: inline-block !important
+      width: 100% !important
+      max-width: 519px !important
+      height: 64px !important
+      background: #F2C94C !important
+      border: none !important
+      font-family: Montserrat !important
+      font-style: normal !important
+      font-weight: 500 !important
+      font-size: 18px !important
+      line-height: 31px !important
+      color: #2B2A29 !important
+      padding-bottom: 0 !important
+      margin-top: 53px
+      margin-right: 33px
+      margin-bottom: 17px !important
+      cursor: pointer
+      outline: none
+      transition: 0.3s
+      &:hover 
+        background: #DFAE17 !important
+    &__consent 
+      display: block
+      width: 100% 
+      max-width: 519px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      color: #2B2A29
+      a 
+        color: #2B2A29
+        &:hover 
+          text-decoration: none
+
+@media (max-width: 1600px)
+  .invite
+    &-girl 
+      left: 0
+@media (max-width: 1360px)
+  .invite 
+    &-title 
+      margin-right: 0
+@media (max-width: 1200px)
+  .invite 
+    &-form 
+      &__consent 
+        font-size: 10px
+@media (max-width: 1000px)
+  .invite 
+    &-title 
+      font-size: 24px 
+      max-width: 405px
+    &-girl 
+      width: 500px
+      img 
+        width: 100%
+    &-form 
+      &__item 
+        input 
+          margin-bottom: 30px
+      &__btn 
+        margin-top: 30px
+        margin-right: 0
+
+@media (max-width: 768px)
+  .invite 
+    padding-bottom: 350px
+    &-block 
+      flex-direction: column
+    &-title 
+      font-size: 22px
+      line-height: 140%
+
+@media (max-width: 580px)
+  .invite 
+    padding-bottom: 230px
+    &-girl 
+      width: 320px
+    &-form 
+      &__item 
+        label 
+          font-size: 15px
+      &__consent 
+        font-size: 13px 
+        line-height: 146%

@@ -1,0 +1,250 @@
+.header 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  max-width: 1757px
+  margin: 0 auto
+  padding-top: 11px
+  padding-bottom: 10px
+  position: relative
+  &-block 
+    display: flex
+    align-items: center
+    &__logo 
+      text-decoration: none
+      outline: none
+    &__text 
+      display: inline-block
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 23px
+      color: #2B2A29
+      margin-left: 19px
+    &__social 
+      display: flex
+      align-items: center
+      a 
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 41px
+        height: 41px
+        border-radius: 50%
+        margin-right: 21px
+        background: #FFFFFF
+        transition: 0.3s
+        &:hover 
+          background: #DDEFBB
+        &:last-child 
+          margin-right: 0
+  &-menu 
+    display: flex
+    align-items: center
+    list-style: none
+    margin-right: 84px
+    &__item 
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 30px
+      padding: 0 20px
+      cursor: pointer
+      transition: 0.2s
+      position: relative
+      &:hover 
+        &:after 
+          width: 10px
+      &:after
+        position: absolute
+        content: ''
+        width: 0px
+        height: 2px
+        top: 50%
+        left: 0
+        margin-top: -1px
+        background: linear-gradient(90deg, #DCE35B 0%, #45B649 100%)
+        transition: 0.3s
+      &:last-child 
+        &:after 
+          display: none
+      a 
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: #4B4B4B
+        text-decoration: none
+    &__border
+      width: 111px
+      height: 30px
+      border-radius: 11px 0
+      background: #FFFFFF
+      transition: 0.3s
+      position: relative
+      &:hover 
+        background: none
+        a 
+          color: #FFFFFF
+      &:before 
+        position: absolute
+        content: ''
+        width: 113px
+        height: 32px
+        top: -1
+        left: -1
+        border-radius: 12px 0
+        background: linear-gradient(90deg, #DCE35B 0%, #45B649 100%)
+        z-index: -1
+  &-phone 
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+    color: #4B4B4B
+    text-decoration: none
+    margin-right: 60px
+  &-mobile 
+    display: none
+    width: 20px
+    height: 20px
+    margin-right: 20px
+    .line1
+      display: block
+      width: 18px
+      height: 1px
+      background: #000000
+      transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    .line2
+      display: block
+      width: 18px
+      height: 1px
+      background: #000000
+      margin-top: 5px
+      transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    .line3
+      display: block
+      width: 18px
+      height: 1px
+      background: #000000
+      margin-top: 5px
+      transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+.button-menu__active 
+  .line1
+    width: 20px
+    transform: rotate(45deg) translate(5px, 3px)
+  .line2
+    visibility: hidden
+  .line3
+    width: 20px
+    transform: rotate(-45deg) translate(5px, -4px)
+
+
+.mobile 
+  display: none
+  position: absolute
+  width: 100%
+  height: 100vh
+  top: 60px
+  left: 0
+  background: #FFFFFF
+  padding-top: 40px
+  z-index: 11
+  &-menu 
+    display: flex
+    flex-direction: column 
+    align-items: center
+    &__list 
+      display: flex
+      flex-direction: column
+      align-items: center
+      list-style: none 
+      li 
+        a 
+          font-family: Montserrat 
+          font-style: normal
+          font-weight: 700
+          font-size: 18px
+          line-height: 44px
+          text-align: center
+          color: #4B4B4B
+          text-decoration: none 
+          text-align: center
+    &__phone 
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 700
+      font-size: 22px
+      line-height: 54px
+      text-align: center
+      color: #4B4B4B
+      margin-top: 40px
+      margin-bottom: 88px
+      text-decoration: none
+    &__social 
+      display: flex
+      align-items: center
+      a 
+        text-decoration: none 
+        margin-right: 40px
+        &:last-child 
+          margin-right: 0
+
+.menu-active 
+  display: block
+
+
+@media (max-width: 1600px)
+  .header 
+    padding-left: 20px
+    padding-right: 20px
+    &-block 
+      &__text 
+        display: none
+
+@media (max-width: 1360px)
+  .header 
+    &-phone 
+      display: none
+
+@media (max-width: 1200px)
+  .header 
+    &-menu 
+      margin-right: 20px
+      &__item 
+        padding: 0 15px
+    &-block 
+      &__social 
+        a 
+          margin-right: 5px
+
+@media (max-width: 1000px)
+  .header 
+    &-menu 
+      &__item 
+        a 
+          font-size: 14px
+    &-block 
+      &__social 
+        display: none
+
+@media (max-width: 768px)
+  .header 
+    justify-content: flex-start
+    &-mobile 
+      display: block
+    &-block 
+      &__text 
+        display: block
+    &-menu 
+      display: none
+
+@media (max-width: 580px)
+  .header 
+    padding-left: 10px
+    padding-right: 10px

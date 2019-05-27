@@ -1,0 +1,135 @@
+.instruction 
+  padding-top: 65px
+  padding-bottom: 54px
+  background: linear-gradient(90deg, #FFEEEE 0%, #DDEFBB 100%)
+  &-title 
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 32px
+    line-height: 47px
+    color: #2B2A29
+  &-blocks 
+    display: flex
+    justify-content: space-between
+    margin-top: 44px
+  &-block 
+    position: relative
+    &:before 
+      position: absolute
+      content: ''
+      width: 110px
+      top: 36%
+      right: -120px
+      border-bottom: 3px dotted #BDBDBD
+    &:last-child 
+      &:before 
+        display: none
+    &__wrapper 
+      display: inline-block
+      width: 217px
+      height: 217px
+      border-radius: 50%
+      margin: 0 11px 16px 0 
+      border: 1px solid rgba(199, 75, 67, 0.2)
+      vertical-align: middle
+      padding: 15.5px 15.5px
+    &__image
+      display: block
+      width: 184px
+      height: 184px
+      border-radius: 50%
+      box-shadow: 0px 0px 25px rgba(0, 113, 181, 0.2)
+      position: relative
+    &__number 
+      display: inline-block
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 80px
+      line-height: 117px
+      color: #C74B43
+      vertical-align: middle
+    &__description 
+      display: block
+      width: 100%
+      max-width: 275px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 27px
+      color: #2B2A29
+      margin-left: 24px
+
+@media (max-width: 1200px)
+  .instruction
+    &-block 
+      &:before 
+        display: none
+      &__wrapper 
+        width: 185px
+        height: 185px
+      &__image 
+        width: 152px
+        height: 152px
+        img 
+          width: 100%
+      &__number 
+        margin-top: -25px
+        font-size: 70px
+@media (max-width: 1000px)
+  .instruction
+    &-title 
+      font-size: 24px
+    &-block 
+      &__wrapper 
+        width: 145px
+        height: 145px
+      &__image 
+        width: 112px
+        height: 112px
+      &__number 
+        font-size: 40px
+      &__description 
+        max-width: 185px
+        font-size: 12px
+
+@media (max-width: 768px)
+  .instruction 
+    &-title 
+      font-size: 22px
+      line-height: 140%
+    &-blocks 
+      flex-direction: column
+    &-block 
+      margin-bottom: 30px
+      &__number 
+        vertical-align: top
+        font-size: 60px
+        margin-top: -35px
+      &__description 
+        position: absolute
+        top: 60px
+        left: 140px
+        font-size: 15px
+        line-height: 140%
+
+@media (max-width: 580px)
+  .instruction 
+    padding-top: 35px 
+    &-block 
+      &:before 
+        display: block
+        width: 55px
+        top: 30%
+        right: 25px
+      &__wrapper 
+        width: 122px
+        height: 122px
+      &__image 
+        width: 89px
+        height: 89px
+      &__description 
+        margin-left: 0
+        width: 165px
