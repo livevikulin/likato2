@@ -170,7 +170,7 @@
 
 .custom-select__dropdown {
   overflow: hidden;
-  z-index: 1;
+  z-index: 1000;
   top: calc(100% - 1px);
   background-color: #fff;
   border-width: 0 1px 1px;

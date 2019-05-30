@@ -718,6 +718,11 @@ main {
   color: #AAAAAA;
 }
 
+.hero-form__select {
+  position: relative;
+  z-index: 1000;
+}
+
 .hero-form__btn {
   display: inline-block !important;
   width: 100% !important;
@@ -739,6 +744,11 @@ main {
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
 }
 
 .hero-form__btn:hover {
@@ -835,6 +845,11 @@ main {
 .custom-select__dropdown {
   width: 100% !important;
   max-width: 519px !important;
+  transform: translateZ(20px);
+  -webkit-transform: translateZ(20px);
+  -moz-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  -o-transform: translateZ(20px);
 }
 
 .custom-select__option {
@@ -844,6 +859,11 @@ main {
   font-size: 20px !important;
   line-height: 29px !important;
   color: #2B2A29 !important;
+}
+
+.custom-select--active {
+  position: relative;
+  z-index: 10;
 }
 
 @media (max-width: 1200px) {
@@ -935,6 +955,7 @@ main {
   }
   .hero-form__btn {
     margin-top: 30px;
+    z-index: 0;
   }
   .hero-form__details {
     bottom: 60px;
@@ -1025,9 +1046,11 @@ main {
     font-size: 15px;
   }
   .hero-form__btn {
+    position: relative;
     height: 45px;
     font-size: 15px;
     margin-right: 0;
+    z-index: 0;
   }
   .hero-form__consent {
     width: 296px;
@@ -2015,7 +2038,13 @@ main {
   color: #AAAAAA;
 }
 
+.invite-form__select {
+  position: relative;
+  z-index: 1000;
+}
+
 .invite-form__btn {
+  position: relative;
   display: inline-block !important;
   width: 100% !important;
   max-width: 519px !important;
@@ -2034,6 +2063,7 @@ main {
   margin-bottom: 17px !important;
   cursor: pointer;
   outline: none;
+  z-index: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

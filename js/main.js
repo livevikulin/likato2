@@ -49,6 +49,16 @@ $(document).ready(function() {
 	$("#hero-phone").mask("+7(999)-999-99-99");
 	$("#invite-phone").mask("+7(999)-999-99-99");
 
+	$('#hero-phone').on('change keyup input click mouseup', function(e) {
+		var $element = $(e.target);
+		var value = $element.val();
+		
+		if(value == "+7(7__)-___-__-__" || value == "+7(8__)-___-__-__") {
+			$element.val("");
+			$element.trigger('focus');
+		}
+	});
+
 	//Убирает label, если input заполнен 
 	$("input[data-accsess]").on("change",function(){
 		if (this.value !== "") {
